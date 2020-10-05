@@ -17,7 +17,7 @@ after_success:
 #log into the docker CLI
     - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_ID" --password-stdin
 #push images to docker hub
-    - docker push -t josempd/multi-client
-    - docker push -t josempd/multi-nginx 
-    - docker push -t josempd/multi-server
-    - docker push -t josempd/multi-worker
+    - docker push josempd/multi-client
+    - docker push josempd/multi-nginx 
+    - docker push josempd/multi-server
+    - docker push josempd/multi-worker
